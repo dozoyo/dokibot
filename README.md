@@ -13,17 +13,5 @@ You'll need elixir. Check out install instructions [here](https://elixir-lang.or
 
 ### Start up
 
-You'll need to define a `config.exs` file under `config/` at the root of this directory.
-
-```elixir
-use Mix.Config
-
-config :nostrum,
-  token: "your_token_here", # The token of your bot as a string
-  num_shards: 1 # The number of shards you want to run your bot under, or :auto.
-```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/doki](https://hexdocs.pm/doki).
+You'll need to define an `.env` file for `config/`.
 
