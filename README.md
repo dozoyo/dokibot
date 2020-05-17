@@ -1,18 +1,26 @@
 # Doki
 
+This is a discord bot using [nostrum](https://github.com/Kraigie/nostrum) to connect to Discord API.
+
+
 **TODO: Add description**
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `doki` to your list of dependencies in `mix.exs`:
+### Dependencies
+
+You'll need elixir. Check out install instructions [here](https://elixir-lang.org/install.html)
+
+### Start up
+
+You'll need to define a `config.exs` file under `config/` at the root of this directory.
 
 ```elixir
-def deps do
-  [
-    {:doki, "~> 0.1.0"}
-  ]
-end
+use Mix.Config
+
+config :nostrum,
+  token: "your_token_here", # The token of your bot as a string
+  num_shards: 1 # The number of shards you want to run your bot under, or :auto.
 ```
 
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
